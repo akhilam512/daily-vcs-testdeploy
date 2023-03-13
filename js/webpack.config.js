@@ -105,7 +105,8 @@ export default function wwwClientConfig(env) {
       clean: true,
     },
     devServer: {
-      port: 8083,
+      // port: 8083,
+      allowedHosts: "all",
       static: {
         directory: './build',
       },
